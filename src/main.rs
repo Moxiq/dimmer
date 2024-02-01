@@ -33,7 +33,8 @@ fn main() {
     }).unwrap();
 
     println!("User wallpaper: {}", path_user_wp);
-    println!("new wallpaper: {}", path_dimmer);
+    println!("Dimmer wallpaper: {}", path_dimmer);
+    println!("Process name: {}", process_string);
 
     if !Path::new(&path_dimmer).exists() {
         panic!("Wallpaper not found ({})", path_dimmer);
