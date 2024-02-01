@@ -5,14 +5,6 @@ use std::env;
 
 use wallpaper;
 
-fn get_processes(system: &mut sysinfo::System) {
-    system.refresh_processes();
-
-    for (pid, process) in system.processes() {
-        println!("{}:{}", pid, process.name());
-    }
-}
-
 fn main() {
     // First, get the current background path so that we can reset it when this program ends
     let path_user_wp = wallpaper::get().unwrap();
