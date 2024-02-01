@@ -1,5 +1,5 @@
 [package]
-name = "wpaper"
+name = "dimmer"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 wallpaper = "3.2.0"
 sysinfo = "0.30.5"
+ctrlc = "3.4.2"
