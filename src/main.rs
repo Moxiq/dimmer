@@ -19,7 +19,6 @@ fn main() {
     let process_string = &args[2];
 
     // First, get the current background path so that we can reset it when this program ends
-    // let cl = path_user_wp.clone();
     let path_user_wp = wallpaper::get().unwrap();
 
     // ctrl-c handler
